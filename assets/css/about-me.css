@@ -1,0 +1,22 @@
+.skill-bar {
+  background-color: var(--light-green);
+}
+.skill-bar,
+.skill-progress {
+  height: 40px;
+}
+.skill-progress {
+  background-color: var(--green);
+}
+.animate-bar {
+  animation: animate-progress 2.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes animate-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
