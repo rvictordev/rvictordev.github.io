@@ -183,3 +183,6 @@ main {
 .w-800px p {
   font-size: 18px;
 }
+.text-justify {
+  text-align: justify;
+}

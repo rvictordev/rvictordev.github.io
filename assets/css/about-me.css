@@ -7,10 +7,11 @@
 }
 .skill-progress {
   background-color: var(--green);
+  width: 0;
 }
 .animate-bar {
   animation: animate-progress 2.5s ease-in-out;
-  animation-iteration-count: 1;
+  width: 100%;
 }
 @keyframes animate-progress {
   0% {
