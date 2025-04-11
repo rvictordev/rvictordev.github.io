@@ -32,10 +32,6 @@
 .hero-banner .portfolio-footer a:hover {
   animation: bounce 1s ease-in-out infinite;
 }
-#about-me {
-  position: absolute;
-  top: -126px;
-}
 @keyframes bounce {
   0%,
   20%,
