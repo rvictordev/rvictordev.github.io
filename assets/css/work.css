@@ -1,0 +1,7 @@
+.project-card {
+  min-height: 320px;
+  width: 100%;
+}
+.project-deck {
+  gap: 0 30px;
+}

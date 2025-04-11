@@ -11,7 +11,6 @@ body {
   --light-green: #a5c9ca;
   --green-white: #e7f6f2;
   --white: #ffffff;
-  --black: #000000;
 }
 .color-dark {
   color: var(--dark);
@@ -39,6 +38,7 @@ a,
 p,
 * {
   font-family: "Montserrat";
+  color: var(--dark);
 }
 ul li {
   list-style-type: none;
@@ -81,7 +81,7 @@ section {
 }
 .sub-heading {
   font-size: 30px;
-  color: var(--black);
+  color: var(--dark);
 }
 /* header */
 .site-logo a {
@@ -195,6 +195,20 @@ main {
 .text-justify {
   text-align: justify;
 }
+.position {
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+  padding: 2px 10px;
+  background-color: var(--light-green);
+  width: max-content;
+  color: var(--white);
+  font-weight: 700;
+}
+.anchor {
+  position: absolute;
+  top: -126px;
+}
 .sirkol-radius {
   border-radius: 50%;
 }
@@ -207,5 +221,16 @@ main {
   }
   100% {
     background-color: hsl(200, 20%, 95%);
+  }
+}
+.skeleton-card {
+  animation: skeleton-card-loading 1s linear infinite;
+}
+@keyframes skeleton-card-loading {
+  0% {
+    background-color: hsl(163, 100%, 97%);
+  }
+  100% {
+    background-color: hsl(164, 45%, 94%);
   }
 }
