@@ -223,3 +223,14 @@ main {
     background-color: hsl(200, 20%, 95%);
   }
 }
+.skeleton-card {
+  animation: skeleton-card-loading 1s linear infinite;
+}
+@keyframes skeleton-card-loading {
+  0% {
+    background-color: hsl(163, 100%, 97%);
+  }
+  100% {
+    background-color: hsl(164, 45%, 94%);
+  }
+}
