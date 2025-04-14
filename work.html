@@ -20,14 +20,14 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $("#site-header").load("index.html #site-header-container");
+      });
+    </script>
     <title>Work</title>
   </head>
   <body>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        $("#header-work").load("site-header");
-      });
-    </script>
-    <header id="header-work"></header>
+    <header id="site-header" class="default-header hide-header"></header>
   </body>
 </html>
