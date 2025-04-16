@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
   const halfScreen = $(window).height() / 2 + 100;
   const header = $(".default-header");
 
+  console.log("test");
   /** SCROLLING EFFECT */
   $(window).scroll(function () {
     if ($(window).scrollTop() > oneFourthScreen) {
