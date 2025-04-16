@@ -28,7 +28,6 @@
 }
 .hero-banner .anchor-bottom:hover svg path {
   fill: var(--green-white);
-  position: relative;
 }
 .hero-banner .portfolio-footer a:hover {
   animation: bounce 1s ease-in-out infinite;
