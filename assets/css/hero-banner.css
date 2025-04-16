@@ -32,6 +32,16 @@
 .hero-banner .portfolio-footer a:hover {
   animation: bounce 1s ease-in-out infinite;
 }
+caret {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
 @keyframes bounce {
   0%,
   20%,

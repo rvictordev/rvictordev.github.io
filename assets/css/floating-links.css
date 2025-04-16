@@ -1,0 +1,8 @@
+.floating-links .row {
+  gap: 20px;
+}
+.floating-links {
+  position: fixed;
+  right: 12%;
+  top: 50%;
+}
