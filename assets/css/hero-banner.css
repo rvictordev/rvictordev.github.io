@@ -29,7 +29,7 @@
 .hero-banner .anchor-bottom:hover svg path {
   fill: var(--green-white);
 }
-.hero-banner .portfolio-footer a:hover {
+.hero-banner .portfolio-footer a:hover svg {
   animation: bounce 1s ease-in-out infinite;
 }
 caret {

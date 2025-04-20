@@ -5,4 +5,9 @@
   position: fixed;
   right: 12%;
   top: 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+.floating-links a.hide-links {
+  margin-right: -100px;
 }
