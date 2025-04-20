@@ -10,4 +10,5 @@
 }
 .floating-links a.hide-links {
   margin-right: -100px;
+  opacity: 0;
 }
