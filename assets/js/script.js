@@ -32,6 +32,10 @@ jQuery(document).ready(function ($) {
     });
   });
   /** END SCROLLING EFFECT */
+
+  /** Get Year */
+  const year = new Date();
+  $("#copyright-year").html(year.getFullYear());
 });
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter

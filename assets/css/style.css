@@ -132,7 +132,6 @@ main {
   background: url("/assets/imgs/bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
-  height: 100vh;
 }
 .w-100 {
   width: 100%;
