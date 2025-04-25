@@ -1,6 +1,7 @@
 .project-card {
-  min-height: 320px;
+  max-height: 320px;
   width: 48%;
+  position: relative;
 }
 .project-deck {
   gap: 30px;
@@ -11,4 +12,15 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.slider-thumbnails {
+  bottom: 0;
+  position: absolute;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.slider-thumbnails > div {
+  max-width: 20%;
+  max-height: 50px;
 }
