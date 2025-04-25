@@ -2,6 +2,7 @@
   max-height: 320px;
   width: 48%;
   position: relative;
+  overflow: hidden;
 }
 .project-deck {
   gap: 30px;
@@ -14,13 +15,40 @@
   object-position: center;
 }
 .slider-thumbnails {
-  bottom: 0;
+  bottom: -110px;
   position: absolute;
   gap: 10px;
   padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
 }
 .slider-thumbnails > div {
   max-width: 20%;
   max-height: 50px;
+}
+.nav-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-arrow a {
+  color: var(--white);
+}
+.prev {
+  left: -3%;
+}
+.next {
+  left: 103%;
+}
+.project-card:hover .prev {
+  left: 2.5%;
+}
+.project-card:hover .next {
+  left: 97.5%;
+}
+.project-card:hover .slider-thumbnails {
+  bottom: 0;
 }
