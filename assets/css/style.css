@@ -91,6 +91,7 @@ section {
   color: var(--dark);
   font-weight: 700;
   font-size: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .menu-header-item ul {
   padding: 0;
@@ -132,6 +133,7 @@ main {
   background: url("/assets/imgs/bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
+  transition: all 0.3s ease-in-out;
 }
 .w-100 {
   width: 100%;
@@ -141,12 +143,14 @@ main {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 .row {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .justify-spacebetween {
   justify-content: space-between;
@@ -231,5 +235,47 @@ main {
   }
   100% {
     background-color: hsl(164, 45%, 94%);
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1250px) {
+  main {
+    background-size: 50vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-header-item .menu-item {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .site-logo span {
+    font-size: 20px;
+  }
+  main {
+    background-size: 40vh;
+  }
+  .default-header {
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 475px) {
+  .site-logo span {
+    font-size: 18px;
+  }
+  main {
+    background-size: 25vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  .menu-header-item .menu-item {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .site-logo span {
+    font-size: 14px;
+  }
+  main {
+    background-size: 20vh;
   }
 }

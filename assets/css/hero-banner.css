@@ -7,6 +7,9 @@
 .hero-banner .row {
   position: relative;
 }
+.portfolio-profile img {
+  max-width: 326px;
+}
 .hero-banner .portfolio-introduction {
   gap: 10px 0;
 }
@@ -55,5 +58,12 @@ caret {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+  .portfolio-profile {
+    flex-direction: column;
   }
 }
