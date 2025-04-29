@@ -61,7 +61,20 @@
   overflow: hidden;
   margin: 20px 0;
 }
+.visit-project {
+  gap: 10px;
+}
+.visit-project span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
 /* Responsiveness */
+@media screen and (max-width: 1024px) {
+  .visit-project svg {
+    transform: rotate(-130deg);
+  }
+}
 @media screen and (max-width: 991px) {
   .project-deck {
     justify-content: center;
