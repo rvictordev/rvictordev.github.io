@@ -228,6 +228,7 @@ main {
 }
 .skeleton-card {
   animation: skeleton-card-loading 1s linear infinite;
+  border-radius: 10px;
 }
 @keyframes skeleton-card-loading {
   0% {

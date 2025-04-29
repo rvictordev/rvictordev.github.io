@@ -21,3 +21,10 @@
     width: 100%;
   }
 }
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+  .skill-bar,
+  .skill-progress {
+    height: 30px;
+  }
+}
