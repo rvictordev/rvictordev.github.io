@@ -286,6 +286,9 @@ main {
   .sub-heading {
     font-size: 25px;
   }
+  .container {
+    padding: 0 40px;
+  }
 }
 @media screen and (max-width: 475px) {
   .menu-header-item .menu-item {
