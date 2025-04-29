@@ -244,9 +244,15 @@ main {
     background-size: 50vh;
   }
 }
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 50px;
+    line-height: 1;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-header-item .menu-item {
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 15px;
   }
   .site-logo span {
@@ -258,18 +264,50 @@ main {
   .default-header {
     padding: 15px 0;
   }
+  .heading {
+    font-size: 45px;
+  }
+  section {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .heading {
+    font-size: 35px;
+  }
+  .fs-22 {
+    font-size: 18px !important;
+  }
+  .primary-button,
+  .w-800px p {
+    font-size: 16px;
+  }
+  .sub-heading {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 475px) {
+  .menu-header-item .menu-item {
+    font-size: 15px;
+    margin-left: 15px;
+  }
   .site-logo span {
     font-size: 18px;
   }
   main {
     background-size: 25vh;
   }
+  .portfolio-footer div:nth-child(1),
+  .portfolio-footer div:nth-child(3) {
+    display: none;
+  }
+  .hero-banner .portfolio-footer {
+    justify-content: center !important;
+  }
 }
 @media screen and (max-width: 390px) {
   .menu-header-item .menu-item {
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 10px;
   }
   .site-logo span {

@@ -61,3 +61,31 @@
   overflow: hidden;
   margin: 20px 0;
 }
+/* Responsiveness */
+@media screen and (max-width: 991px) {
+  .project-deck {
+    justify-content: center;
+  }
+  .project-card {
+    width: 70%;
+    min-height: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project-card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .project-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .project-card-inner-container {
+    padding: 15px;
+  }
+  .project-title {
+    margin: 10px 0;
+  }
+}

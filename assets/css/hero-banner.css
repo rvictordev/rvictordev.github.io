@@ -63,7 +63,21 @@ caret {
 
 /* Responsiveness */
 @media screen and (max-width: 1024px) {
+  .portfolio-profile img {
+    max-width: 256px;
+  }
+}
+@media screen and (max-width: 767px) {
   .portfolio-profile {
     flex-direction: column;
+    gap: 50px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .hero-banner {
+    height: 80vh;
+  }
+  .portfolio-profile img {
+    max-width: 206px;
   }
 }
