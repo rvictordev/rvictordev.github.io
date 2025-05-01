@@ -39,10 +39,90 @@ caret {
   border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
-
-@keyframes caret {
+.banner-text {
+  animation: banner-text 9s infinite;
+  height: 27px;
+  overflow: hidden;
+}
+.main-text {
+  animation: showUp 9s infinite;
+}
+.floating-image {
+  position: absolute;
+  right: 0;
+  bottom: 35%;
+  height: 20%;
+  margin-right: 190px;
+  animation: floating-image 20s infinite;
+}
+@keyframes floating-image {
+  0% {
+    transform: translateY(-5px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  35% {
+    transform: translateY(0);
+  }
   50% {
-    border-color: transparent;
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes showUp {
+  0% {
+    margin-top: 27px;
+  }
+  15% {
+    margin-top: 0;
+  }
+  30% {
+    margin-top: 0;
+  }
+  45% {
+    margin-top: -27px;
+  }
+  60% {
+    margin-top: -27px;
+  }
+  75% {
+    margin-top: -54px;
+  }
+  90% {
+    margin-top: -54px;
+  }
+  100% {
+    margin-top: 27px;
+  }
+}
+@keyframes banner-text {
+  0%,
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes bounce {
@@ -62,6 +142,12 @@ caret {
 }
 
 /* Responsiveness */
+@media (max-width: 1250px) {
+  .floating-image {
+    bottom: 45%;
+    margin-right: 150px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .portfolio-profile img {
     max-width: 256px;
@@ -71,6 +157,11 @@ caret {
   .portfolio-profile {
     flex-direction: column;
     gap: 50px 0;
+  }
+  .floating-image {
+    bottom: 57%;
+    height: 15%;
+    margin-right: 130px;
   }
 }
 @media screen and (max-width: 575px) {
