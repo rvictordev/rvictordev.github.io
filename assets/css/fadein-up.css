@@ -1,0 +1,16 @@
+.animate-fadein-up {
+  animation: fadein-up 1s both;
+}
+.fadein-up {
+  opacity: 0;
+}
+@keyframes fadein-up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
