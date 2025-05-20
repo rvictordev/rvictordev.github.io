@@ -25,7 +25,7 @@ body {
   color: var(--green-white);
 }
 .color-white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 h1,
 h2,
@@ -84,6 +84,9 @@ section {
   color: var(--dark);
 }
 /* header */
+#site-header {
+  z-index: 9999;
+}
 .site-logo a {
   text-decoration: none;
 }
@@ -155,6 +158,9 @@ main {
 .justify-spacebetween {
   justify-content: space-between;
 }
+.justify-end {
+  justify-content: end;
+}
 .justify-center {
   justify-content: center;
 }
@@ -163,6 +169,9 @@ main {
 }
 .align-items-start {
   align-items: start;
+}
+.align-items-end {
+  align-items: end;
 }
 .d-flex {
   display: flex;
@@ -202,11 +211,10 @@ main {
   margin: 0;
   margin-bottom: 10px;
   font-style: italic;
-  padding: 2px 10px;
-  background-color: var(--light-green);
+  padding: 5px 0;
   width: max-content;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 500;
 }
 .anchor {
   position: absolute;

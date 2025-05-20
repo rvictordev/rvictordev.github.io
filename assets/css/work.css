@@ -56,6 +56,13 @@
     fill: var(--white);
   }
 }
+.work-card-logo {
+  z-index: 2;
+}
+.work-card-logo--image img {
+  max-width: 300px;
+  object-fit: contain;
+}
 .project-title {
   height: 24px;
   overflow: hidden;
@@ -71,6 +78,80 @@
 }
 .details {
   gap: 0 10px;
+}
+.wcl--year {
+  gap: 10px 0;
+  font-weight: 600;
+  min-height: 100px;
+  overflow: hidden;
+}
+.work-card-right .horizontal-line.horizontal-line {
+  transform: translateX(-295px);
+}
+.work-card-left .horizontal-line.horizontal-line {
+  transform: translateX(295px);
+}
+.work-card-left .wcl--year span {
+  text-align: left;
+}
+.horizontal-line {
+  height: 3px;
+  background-color: var(--dark);
+  width: 100%;
+  opacity: 0;
+}
+.wcl--text {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-align: right;
+  min-height: 38px;
+  position: relative;
+}
+.wcl--up {
+  transform: translateY(40px);
+}
+.wcl--year span {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.wcl--bottom {
+  transform: translateY(-40px);
+}
+.wcl--up.animate-element,
+.wcl--bottom.animate-element {
+  transition: all 1s ease-in-out 1s;
+  transform: translateY(0);
+}
+.horizontal-line.animate-element {
+  opacity: 1;
+  transform: translateX(0) !important;
+  transition: all 0.6s ease-in-out 0.8s;
+}
+.work-card {
+  gap: 80px 0;
+}
+.work-card-body {
+  background-color: var(--light-green);
+  min-height: 600px;
+  min-width: 70%;
+  padding: 50px 80px;
+}
+.work-card-body div {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.work-skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  max-width: 90%;
+  padding-bottom: 20px;
+}
+.work-skill-list svg {
+  margin-bottom: -10px;
 }
 /* Responsiveness */
 @media screen and (max-width: 1024px) {
