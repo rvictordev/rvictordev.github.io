@@ -1,3 +1,7 @@
+.greetings {
+  flex-direction: column;
+  gap: 0 20px;
+}
 .hero-banner {
   height: 100vh;
 }
@@ -145,10 +149,26 @@ caret {
 }
 
 /* Responsiveness */
-@media (max-width: 1250px) {
+@media (max-width: 1520px) {
   .floating-image {
     bottom: 45%;
     margin-right: 150px;
+  }
+}
+@media (max-width: 1250px) {
+  .floating-image {
+    bottom: 49%;
+    margin-right: 130px;
+    height: 17%;
+  }
+}
+@media (max-width: 1080px) {
+  .portfolio-profile {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .greetings {
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -163,15 +183,93 @@ caret {
   }
   .floating-image {
     bottom: 57%;
-    height: 15%;
+    height: 13%;
     margin-right: 130px;
+  }
+  .banner-text,
+  .banner-text div {
+    height: 46px;
+  }
+  @keyframes showUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    15% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateY(-46px);
+      opacity: 1;
+    }
+    45% {
+      transform: translateY(-46px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+      transform: translateY(46px);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes showUp2 {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    30% {
+      margin-top: -46px;
+    }
+    45% {
+      margin-top: -46px;
+    }
+    60% {
+      margin-top: -92px;
+    }
+    75% {
+      margin-top: -92px;
+    }
+    90% {
+      margin-top: -138px;
+    }
+    100% {
+      margin-top: -138px;
+    }
   }
 }
 @media screen and (max-width: 575px) {
-  .hero-banner {
-    height: 80vh;
-  }
   .portfolio-profile img {
     max-width: 206px;
+  }
+  .floating-image {
+    bottom: 60%;
+    height: 13%;
+  }
+}
+@media (max-width: 475px) {
+  .floating-image {
+    bottom: 73%;
+    margin-right: 70px;
+    height: 10%;
+  }
+}
+@media (max-width: 390px) {
+  .floating-image {
+    bottom: 78%;
+    margin-right: 60px;
+    height: 8%;
   }
 }

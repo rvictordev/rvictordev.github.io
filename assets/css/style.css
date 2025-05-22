@@ -248,7 +248,7 @@ main {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1520px) {
   main {
     background-size: 50vh;
   }
@@ -279,13 +279,13 @@ main {
   section {
     padding-bottom: 50px;
   }
+  .fs-22 {
+    font-size: 18px !important;
+  }
 }
 @media screen and (max-width: 575px) {
   .heading {
     font-size: 35px;
-  }
-  .fs-22 {
-    font-size: 18px !important;
   }
   .primary-button,
   .w-800px p {
