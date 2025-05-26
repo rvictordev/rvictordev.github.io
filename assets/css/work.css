@@ -154,6 +154,15 @@
   margin-bottom: -10px;
 }
 /* Responsiveness */
+@media screen and (max-width: 1250px) {
+  .work-card-logo {
+    width: 30% !important;
+  }
+  .work-card-body {
+    width: 65%;
+    min-width: unset;
+  }
+}
 @media screen and (max-width: 1024px) {
   .visit-project svg {
     transform: rotate(-130deg);
@@ -167,10 +176,57 @@
     width: 70%;
     min-height: unset;
   }
+  .work-card-right .work-card-container {
+    flex-direction: column-reverse;
+    gap: 30px 0;
+  }
+  .work-card-right .work-card-container,
+  .work-card-left .work-card-container {
+    gap: 30px 0;
+  }
+  .work-card-left .work-card-container {
+    flex-direction: column;
+  }
+  .work-card-left .work-card-logo {
+    flex-direction: row-reverse;
+  }
+  .work-card-logo {
+    width: 90% !important;
+    height: unset !important;
+    flex-direction: row;
+    align-items: center;
+  }
+  .work-card-logo--image {
+    width: 100%;
+  }
+  .work-card-right .work-card-logo--image {
+    translate: 0;
+  }
+  .work-card-body {
+    width: 90%;
+    min-width: unset;
+  }
+  .work-card-logo--image,
+  .wcl--year {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 767px) {
   .project-card {
     width: 90%;
+  }
+  .work-card-logo--image,
+  .wcl--year,
+  .work-card-logo,
+  .work-card-body {
+    width: 100% !important;
+  }
+  .work-card-left .work-card-logo,
+  .work-card-right .work-card-logo {
+    flex-direction: column;
+  }
+  .work-card-body div {
+    min-width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -184,5 +240,13 @@
   }
   .project-title {
     margin: 10px 0;
+  }
+  .work-card-body {
+    min-height: 200px;
+    padding: 20px 50px;
+  }
+  .work-card-logo--image {
+    min-height: unset;
+    height: 250px;
   }
 }

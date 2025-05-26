@@ -5,10 +5,15 @@
   position: fixed;
   right: 12%;
   top: 50%;
-  z-index: 2;
+  z-index: 5;
   overflow: hidden;
 }
 .floating-links a.hide-links {
   margin-right: -100px;
   opacity: 0;
+}
+.floating-links a {
+  padding: 10px;
+  background-color: var(--light-green);
+  border-radius: 10px;
 }
