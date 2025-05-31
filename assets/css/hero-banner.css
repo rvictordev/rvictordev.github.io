@@ -44,7 +44,7 @@ caret {
   animation: caret 1s steps(1) infinite;
 }
 .banner-text {
-  height: 27px;
+  height: 30px;
   overflow: hidden;
 }
 .main-text {
@@ -83,11 +83,11 @@ caret {
     opacity: 1;
   }
   30% {
-    transform: translateY(-27px);
+    transform: translateY(-30px);
     opacity: 1;
   }
   45% {
-    transform: translateY(-27px);
+    transform: translateY(-30px);
     opacity: 0;
   }
   60% {
@@ -95,7 +95,7 @@ caret {
   }
   75% {
     opacity: 0;
-    transform: translateY(27px);
+    transform: translateY(30px);
   }
   90% {
     opacity: 1;
@@ -114,22 +114,22 @@ caret {
     margin-top: 0;
   }
   30% {
-    margin-top: -27px;
+    margin-top: -30px;
   }
   45% {
-    margin-top: -27px;
+    margin-top: -30px;
   }
   60% {
-    margin-top: -54px;
+    margin-top: -60px;
   }
   75% {
-    margin-top: -54px;
+    margin-top: -60px;
   }
   90% {
-    margin-top: -81px;
+    margin-top: -90px;
   }
   100% {
-    margin-top: -81px;
+    margin-top: -90px;
   }
 }
 @keyframes bounce {

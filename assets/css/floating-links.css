@@ -19,7 +19,7 @@
 }
 .floating-links a {
   padding: 10px;
-  background-color: var(--light-green);
+  background-color: var(--green);
   border-radius: 10px;
 }
 @media (max-width: 1560px) {

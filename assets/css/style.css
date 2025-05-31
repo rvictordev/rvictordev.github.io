@@ -37,7 +37,7 @@ span,
 a,
 p,
 * {
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   color: var(--dark);
 }
 ul li {
@@ -75,7 +75,7 @@ section {
 }
 
 .heading {
-  font-family: "Playfair Display";
+  font-family: "Montserrat";
   font-size: 55px;
   color: var(--dark);
 }
