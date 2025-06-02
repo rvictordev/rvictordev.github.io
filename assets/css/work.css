@@ -253,4 +253,9 @@
     min-height: unset;
     height: 250px;
   }
+  .project-card {
+    img {
+      max-height: 236px;
+    }
+  }
 }

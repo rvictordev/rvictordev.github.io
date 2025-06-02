@@ -265,6 +265,9 @@ caret {
     margin-right: 70px;
     height: 10%;
   }
+  .greetings {
+    flex-direction: column;
+  }
 }
 @media (max-width: 390px) {
   .floating-image {
