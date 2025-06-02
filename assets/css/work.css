@@ -256,6 +256,7 @@
   .project-card {
     img {
       max-height: 236px;
+      object-fit: cover;
     }
   }
 }

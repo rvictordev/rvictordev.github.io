@@ -323,6 +323,9 @@ main {
   .hero-banner .portfolio-footer {
     justify-content: center !important;
   }
+  .skeleton-card {
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 390px) {
   .menu-header-item .menu-item {
